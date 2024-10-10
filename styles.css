@@ -10,6 +10,7 @@
   --btn-bg-clr: #596D48;
   --btn-clr: white;
   --focus-clr: blue;
+  --valid-clr: green;
 }
 
 body {
@@ -32,10 +33,6 @@ body {
 
 #sign-up-form h4 {
    margin-bottom: 25px;
-}
-.input-box label {
-  font-size: .7rem;  
-  margin-bottom: 5px;
 }
 
 .container {
@@ -61,7 +58,6 @@ body {
   
 }
 
-
 .input-group {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -72,13 +68,12 @@ body {
   display: flex;
   flex-direction: column;
   margin-top: 10px;
-  
 }
 
-.input-box input:focus {
-  border: 1px solid var(--focus-clr);
+.input-box label {
+  font-size: .7rem;  
+  margin-bottom: 5px;
 }
-
 
 .input-box input {
  border: 1px solid var(--border-clr);
@@ -86,8 +81,13 @@ body {
    
 }
 
-input-box input:focus {
- border: 1px solid var(--focus-clr);
+.input-box input:focus {
+  border: 1px solid var(--focus-clr);
+}
+
+
+.input-box input:valid {
+  border: 2px solid var(--valid-clr)
 }
 
 .input-box input:invalid {
